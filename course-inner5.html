@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <nav>
+        <img src="images/logo.svg" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                
+                <li><a class="active" href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="course-detail">
+        <h2>Course-Details</h2>
+    </section>
+
+
+<section id="course-inner">
+<div class="overview">
+    <img class="course-img" src="images/c5.jpg" alt="">
+    <div class="course-head">
+        <div class="c-name">
+            <h2>beginner courses</h2>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Artificial Intelligence and Machine Learning</p>
+        </div>
+        <span>$60.43 </span>
+    </div>
+    <h3>Instructor</h3>
+    <div class="tutor">
+        <img src="images/pro1.webp" alt="">
+        <div class="tutor-det">
+            <h5>Miliya Rai</h5>
+            <p>Developer At Microsoft</p>
+        </div>
+    </div>
+        <hr>
+        <h3>Course Overview</h3>
+        <p>Acquire a solid foundation by mastering the fundamental concepts of AI and ML, ranging from supervised and unsupervised learning to neural networks and decision trees. You will develop the ability to clean, preprocess, and analyze data—an essential skill in building effective machine learning models. From linear regression to support vector machines, you will delve into a diverse array of algorithms, honing the expertise to select and implement the most appropriate models for specific tasks. <br><br>
+
+            As you progress, you will uncover the art of feature engineering—identifying and refining features that enhance model performance and unveil insights from complex data. The realm of deep learning will beckon, inviting exploration into architectures like convolutional neural networks (CNNs) and recurrent neural networks (RNNs). With these advanced tools, you'll tackle intricate challenges, from image recognition to natural language processing. <br><br>
+            
+            Moreover, you'll unlock the capacity to discern hidden patterns and trends within data, empowering data-driven decision-making. Evaluation metrics and optimization strategies will guide you in fine-tuning models for optimal performance. The domain of Natural Language Processing (NLP) will demystify, enabling you to process, analyze, and generate human language—a skill pivotal in applications like sentiment analysis and chatbots. <br><br>
+            
+            The course extends beyond theory, propelling you into real-world applications that span predictive analytics, recommendation systems, and beyond. 
+
+        </p>
+        <hr>
+        <h3>What you'll learn</h3>
+        <div class="learn">
+            <p> <i class="far fa-check-circle"></i> Build a solid foundation by comprehending the core concepts of AI and ML, including supervised and unsupervised learning, neural networks, and decision trees.</p>
+            <p> <i class="far fa-check-circle"></i>Develop skills to clean, preprocess, and analyze data, a critical step in building effective machine learning models.</p>
+            <p> <i class="far fa-check-circle"></i>Learn to identify and engineer features that enhance model performance, extracting meaningful insights from complex data.</p>
+            <p> <i class="far fa-check-circle"></i> Develop the ability to uncover hidden patterns, trends, and relationships in data, empowering you to make data-driven decisions.</p>
+            <p> <i class="far fa-check-circle"></i> Understand evaluation metrics and techniques to assess model performance, and learn strategies for fine-tuning models for optimal results.</p>
+            <p> <i class="far fa-check-circle"></i>Grasp the importance of ethical considerations in AI and ML, ensuring that your solutions are not only technically sound but also socially responsible.</p>
+        </div>
+    
+</div>
+
+<div class="enroll">
+    <h3>This course includes:</h3>
+            <p> <i class="far fa-video"></i> 52 hours video</p>
+            <p> <i class="far fa-newspaper"></i> 75 articles</p>
+            <p> <i class="far fa-cloud-download"></i> Downloadable resources</p>
+            <p> <i class="far fa-infinity"></i>Full lifetime access</p>
+            <p> <i class="far fa-mobile-alt"></i> Access on mobile and TV</p>
+            <p> <i class="far fa-paperclip"></i> Assignments</p>
+            <p> <i class="far fa-trophy-alt"></i> Certificate of completions</p>
+            <div class="enroll-btn">
+                <a class="blue" href="contact.html">Enroll Courses</a>
+            </div>
+</div>
+</section>
+
+
+<!-- footer -->
+<footer>
+<div class="footer-col">
+    <h3>Top Products</h3>
+    <li>Manage Products</li>
+    <li>Power Tools</li>
+    <li>Managed Website</li>
+    <li>Marketing Services</li>
+</div>
+<div class="footer-col">
+    <h3>Quick Links</h3>
+    <li>Jobs</li>
+    <li>Brand Assests</li>
+    <li>Investor Relations</li>
+    <li>Terms of Services</li>
+</div>
+<div class="footer-col">
+    <h3>Manage Reputations</h3>
+    <li>Manage Products</li>
+    <li>Power Tools</li>
+    <li>Managed Website</li>
+    <li>Marketing Services</li>
+</div>
+<div class="footer-col">
+    <h3>Resources</h3>
+    <li>Guides</li>
+    <li>Research</li>
+    <li>Experts</li>
+    <li>Marketing Services</li>
+</div>
+
+</footer>
+<script>
+    $('#menu-btn').click(function(){
+        $('nav .navigation ul').addClass('active')
+    });
+    $('#menu-close').click(function(){
+        $('nav .navigation ul').removeClass('active')
+    });
+</script>
+</body>
+</html>

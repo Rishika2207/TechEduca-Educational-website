@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <nav>
+        <img src="images/logo.svg" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                
+                <li><a class="active" href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="course-detail">
+        <h2>Course-Details</h2>
+    </section>
+
+
+<section id="course-inner">
+<div class="overview">
+    <img class="course-img" src="images/c1.jpg" alt="">
+    <div class="course-head">
+        <div class="c-name">
+            <h2>beginner courses</h2>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>JavaScript Beginners Course</p>
+        </div>
+        <span>$49.99 </span>
+    </div>
+    <h3>Instructor</h3>
+    <div class="tutor">
+        <img src="images/pro1.webp" alt="">
+        <div class="tutor-det">
+            <h5>Ema Irnik</h5>
+            <p>Web Developer At Google</p>
+        </div>
+    </div>
+        <hr>
+        <h3>Course Overview</h3>
+        <p>Upon successful completion of the Java Programming Course, you will emerge equipped with a comprehensive understanding of Java programming and its practical applications. Starting with the basics, you will grasp key concepts such as variables, data types, operators, and control structures, enabling you to lay a solid foundation for your programming journey. <br><br>
+
+            As you progress, you will delve into the realm of object-oriented programming, gaining proficiency in defining classes, objects, inheritance, encapsulation, and polymorphism. Armed with these essential concepts, you will be empowered to create well-structured, modular code that addresses real-world challenges. <br><br>
+            
+            One of the cornerstones of Java expertise is the ability to manipulate data effectively. Throughout the course, you will master the art of working with strings and using regular expressions for efficient data manipulation. In addition, you will gain insight into implementing flow control mechanisms, making informed decisions using if-else statements, switch cases, and loops. <br><br>
+            
+            Exception handling is a crucial aspect of any robust program. By completing this course, you will possess the skills to not only identify potential issues but also gracefully manage exceptions through try-catch blocks, ensuring your applications remain stable and resilient.
+
+        </p>
+        <hr>
+        <h3>What you'll learn</h3>
+        <div class="learn">
+            <p> <i class="far fa-check-circle"></i> Fundamental concepts of Java programming, including variables, data types, operators, and control structures.</p>
+            <p> <i class="far fa-check-circle"></i>Principles of encapsulation, inheritance, and polymorphism.</p>
+            <p> <i class="far fa-check-circle"></i>Manipulate and transform data using Java's built-in libraries for string handling and manipulation.</p>
+            <p> <i class="far fa-check-circle"></i> Implement decision-making processes using if-else statements, switch statements, and conditional operators.</p>
+            <p> <i class="far fa-check-circle"></i> Identify and handle exceptions to write robust and error-tolerant programs.</p>
+            <p> <i class="far fa-check-circle"></i> Create, initialize, and manipulate arrays of various data type</p>
+        </div>
+    
+</div>
+
+<div class="enroll">
+    <h3>This course includes:</h3>
+            <p> <i class="far fa-video"></i> 52 hours video</p>
+            <p> <i class="far fa-newspaper"></i> 75 articles</p>
+            <p> <i class="far fa-cloud-download"></i> Downloadable resources</p>
+            <p> <i class="far fa-infinity"></i>Full lifetime access</p>
+            <p> <i class="far fa-mobile-alt"></i> Access on mobile and TV</p>
+            <p> <i class="far fa-paperclip"></i> Assignments</p>
+            <p> <i class="far fa-trophy-alt"></i> Certificate of completions</p>
+            <div class="enroll-btn">
+                <a class="blue" href="contact.html">Enroll Courses</a>
+            </div>
+</div>
+</section>
+
+
+<!-- footer -->
+<footer>
+<div class="footer-col">
+    <h3>Top Products</h3>
+    <li>Manage Products</li>
+    <li>Power Tools</li>
+    <li>Managed Website</li>
+    <li>Marketing Services</li>
+</div>
+<div class="footer-col">
+    <h3>Quick Links</h3>
+    <li>Jobs</li>
+    <li>Brand Assests</li>
+    <li>Investor Relations</li>
+    <li>Terms of Services</li>
+</div>
+<div class="footer-col">
+    <h3>Manage Reputations</h3>
+    <li>Manage Products</li>
+    <li>Power Tools</li>
+    <li>Managed Website</li>
+    <li>Marketing Services</li>
+</div>
+<div class="footer-col">
+    <h3>Resources</h3>
+    <li>Guides</li>
+    <li>Research</li>
+    <li>Experts</li>
+    <li>Marketing Services</li>
+</div>
+
+</footer>
+<script>
+    $('#menu-btn').click(function(){
+        $('nav .navigation ul').addClass('active')
+    });
+    $('#menu-close').click(function(){
+        $('nav .navigation ul').removeClass('active')
+    });
+</script>
+</body>
+</html>

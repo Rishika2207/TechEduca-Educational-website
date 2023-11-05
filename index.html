@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <nav>
+        <img src="images/logo.svg" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <h2>Enhance Your Future with TechEduca</h2>
+        <p>The Ultimate Guide To Ace
+            SDE Interviews.</p>
+        <div class="btn">
+            <a class="blue" href="about.html"> Learn More</a>
+            <a class="yellow" href="course.html"> Visit courses</a>
+        </div>
+    </section>
+
+    <!-- features -->
+    <section id="features">
+        <h1>Awesome Featurse</h1>
+        <h3>Why TechEduca?</h3>
+        <p>Making learning easier and more convenient for you.</p>
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fa fa-database"></i>
+                <!-- <img src="images/466459.png" alt=""> -->
+                <h3>Data Structure</h3>
+                <p>
+                    Data structures are the problem-solving pillars of coding. Learn all the foundational knowledge about all of the popular data structure that you need, to be well-versed in interviews.
+                </p>
+            </div>
+            <div class="fea-box">
+                <i class="fa fa-graduation-cap"></i>
+                <!-- <img src="images/onlineCourses.png" alt=""> -->
+                <h3>Placement Preparation</h3>
+                <p>
+                    Ace the placement interviews by being knowledgeable in all well-known data structures, popular problem-solving methods, and core computer sciences.
+                </p>
+            </div>
+            <div class="fea-box">
+                <i class="fa fa-check"></i>
+                <!-- <img src="images/certificate.png" alt=""> -->
+                <h3>Hand Picked Question</h3>
+                <p>
+                    Get access to hand-picked coding interview questions across categories & difficulty levels that will prepare you for every interview you would encounter.
+                </p>
+            </div>
+            <div class="fea-box">
+                <i class="fa fa-file-code"></i>
+                <h3>Curated Content</h3>
+                <p>
+                    Learn in-depth conceptual overviews, how to approach an algorithm, how to implement it & how to optimize it.
+                </p>
+            </div>
+            <div class="fea-box">
+                <img src="images/466459.png" alt="">
+                <h3>Learn from the best</h3>
+                <p>
+                    Get access to lectures and get mentored by one of the best in the market.
+                </p>
+            </div>
+            <div class="fea-box">
+                <img src="images/certificate.png" alt="">
+                <h3>Global certification</h3>
+                <p>
+                  Get global certificates and enhance your resumes.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    
+
+
+    <!-- registration -->
+    <section id="registration">
+        <div class="reminder">
+            <p>Get 100 Online Courses for Free</p>
+            <h1>Register to Get It</h1>
+            <div class="time">
+                <div class="date">
+                    18 <br> Days
+                </div>
+                <div class="date">
+                    23 <br> Hours
+                </div>
+                <div class="date">
+                    06 <br> Mins
+                </div>
+                <div class="date">
+                    58 <br> Secs
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <form action="" onsubmit="return validateForm()">
+            <h3>Create Free Account NOW!</h3>
+            <input type="text" placeholder="User Name" id="username">
+    
+                <p id="userError" class="error"></p>
+            <input type="email" placeholder="Enter your email" id="useremail" spellcheck="false" onkeyup="validateEmail()">
+    
+                <p id="emailError" class="error"></p>
+                <input type="number" placeholder="Mobile Number" id="Number">
+    
+                <p id="userNum" class="error"></p>
+            <div class="btn">
+                <!-- <a class="yellow" href="#"> Submit Form</a> -->
+                <input class="yellow" type="submit" id="btn1">
+            </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- profiles -->
+    <section id="experts">
+        <h1>Community Experts</h1>
+        <p>Meet our Educators</p>
+
+        <div class="expert-box">
+            <div class="profile">
+                <img src="images/pro1.webp" alt="">
+                <h6>Ema Irnik</h6>
+                <p>JavaScript & Algorithm Expert</p>
+                <div class="pro-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+            <div class="profile">
+                <img src="images/pro2.webp" alt="">
+                <h6>Noe king</h6>
+                <p>Programming Languages Expert</p>
+                <div class="pro-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            </div>
+            <div class="profile">
+                <img src="images/pro3.webp" alt="">
+                <h6>Eran Malik</h6>
+                <p>Python & Algorithm Expert</p>
+                <div class="pro-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            </div>
+            <div class="profile">
+                <img src="images/pro4.webp" alt="">
+                <h6>Miliya Rai</h6>
+                <p>Developer</p>
+                <div class="pro-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            </div>
+        </div>
+    </section>
+
+<!-- footer -->
+<footer>
+<div class="footer-col">
+    <h3>Top Products</h3>
+    <li>Manage Products</li>
+    <li>Power Tools</li>
+    <li>Managed Website</li>
+    <li>Marketing Services</li>
+</div>
+<div class="footer-col">
+    <h3>Quick Links</h3>
+    <li>Jobs</li>
+    <li>Brand Assests</li>
+    <li>Investor Relations</li>
+    <li>Terms of Services</li>
+</div>
+<div class="footer-col">
+    <h3>Contact Us</h3>
+    <li>Courses</li>
+    <li>About Us</li>
+    <li>Privact Policy</li>
+    <li>Terms of use</li>
+</div>
+<div class="footer-col">
+    <h3>Resources</h3>
+    <li>Guides</li>
+    <li>Research</li>
+    <li>Experts</li>
+    <li>Refund</li>
+</div>
+
+</footer>
+<script>
+    $('#menu-btn').click(function(){
+        $('nav .navigation ul').addClass('active')
+    });
+    $('#menu-close').click(function(){
+        $('nav .navigation ul').removeClass('active')
+    });
+    let username=document.getElementById("username");
+        let UNumber=document.getElementById("Number");
+        let useremail=document.getElementById("useremail");
+        
+        let flag=1;
+        function validateForm(){
+            if(username.value==""){
+                document.getElementById("userError").innerHTML="*User Name is empty"
+                flag=0;
+            }
+            else if(username.value.length<3){
+                document.getElementById("userError").innerHTML="*User Name require min 3 characters"
+                flag=0;
+            }
+            else{
+                document.getElementById("userError").innerHTML="";
+                flag=1;
+            }
+
+
+            if(useremail.value==""){
+                document.getElementById("emailError").innerHTML="*Enter your email";
+                flag=0;
+            }
+            else{
+                document.getElementById("emailError").innerHTML="";
+                flag=1;
+            }
+            
+
+
+            if(UNumber.value.length<10){
+                document.getElementById("userNum").innerHTML="*Mobile Number should be of atleast 10 digits"
+                flag=0;
+            }
+            else if(UNumber.value.length>10){
+                document.getElementById("userNum").innerHTML="*Mobile Number should be of 10 digits"
+                flag=0;
+            }
+            else if((UNumber.value.charAt(0)!=9)&&(UNumber.value.charAt(0)!=8) && (UNumber.value.charAt(0)!=7) ){
+                document.getElementById("userNum").innerHTML="*Number should start with 9,8 and 7";
+                flag=0;
+            }
+            else{
+                document.getElementById("userNum").innerHTML="";
+                flag=1;
+            }
+
+
+           
+            if(flag){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        function validateEmail(){
+           if(!useremail.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+                document.getElementById("emailError").innerHTML="please enter a valid email";
+                return false;
+            }
+            else{
+            document.getElementById("emailError").innerHTML="";
+            return true;
+            }
+        }
+ 
+      
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+fontawesome
+
+            <input type="password" placeholder="Password" id="password"><br>
+
+            <p id="passError" class="error"></p>
+
+
+            <input type="password" placeholder="Confirm Password" id="Cpass"><br>
+
+            <p id="CpassError" class="error"></p>
+
+            
+            let password=document.getElementById("password");
+            let Cpass=document.getElementById("Cpass");
+
+            if(password.value==""){
+                document.getElementById("passError").innerHTML="Password is empty";
+                flag=0;
+            }
+            else{
+                document.getElementById("passError").innerHTML="";
+                flag=1;
+            }
+
+            if(Cpass.value!=password.value){
+                document.getElementById("CpassError").innerHTML="Password and Confirm Password should be same";
+                flag=0;
+            }
+            else{
+                document.getElementById("CpassError").innerHTML="";
+                flag=1;
+            }

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <nav>
+        <img src="images/logo.svg" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                
+                <li><a class="active" href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="course-detail">
+        <h2>Course-Details</h2>
+    </section>
+
+
+<section id="course-inner">
+<div class="overview">
+    <img class="course-img" src="images/c4.jpg" alt="">
+    <div class="course-head">
+        <div class="c-name">
+            <h2>beginner courses</h2>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Web Development</p>
+        </div>
+        <span>$60.99 </span>
+    </div>
+    <h3>Instructor</h3>
+    <div class="tutor">
+        <img src="images/pro1.webp" alt="">
+        <div class="tutor-det">
+            <h5>Ema Irnik</h5>
+            <p>Web Developer At Google</p>
+        </div>
+    </div>
+        <hr>
+        <h3>Course Overview</h3>
+        <p>Upon successfully completing the Web Development course, you will emerge with a comprehensive skill set that empowers you to navigate the intricacies of designing, constructing, and deploying dynamic websites and web applications. <br><br> This transformative journey encompasses a range of learning outcomes:
+
+            Starting at the front-end, you will become well-versed in HTML, CSS, and JavaScript, the building blocks of web design. Through hands-on experience, you will master the art of crafting visually engaging user interfaces that captivate and interact with users seamlessly. Additionally, you will learn to create responsive designs that adapt flawlessly to various screen sizes and devices, ensuring an optimal user experience across platforms. <br><br>
+            
+            Venturing further, you will explore contemporary front-end frameworks such as Bootstrap and React. These frameworks will not only accelerate your development process but also empower you to craft feature-rich, intuitive web applications that cater to diverse user needs. <br><br>
+            
+            On the back-end, you will delve into server-side programming using languages like Node.js and frameworks like Express. Armed with this knowledge, you'll construct robust backends that enable data processing, interaction, and seamless functionality.
+
+        </p>
+        <hr>
+        <h3>What you'll learn</h3>
+        <div class="learn">
+            <p> <i class="far fa-check-circle"></i> Gain proficiency in HTML, CSS, and JavaScript, allowing you to create visually appealing and interactive user interfaces.</p>
+            <p> <i class="far fa-check-circle"></i>Learn to design responsive websites that adapt seamlessly to various screen sizes and devices, ensuring a consistent user experience.</p>
+            <p> <i class="far fa-check-circle"></i>Explore popular front-end frameworks like Bootstrap and React, empowering you to streamline development and create feature-rich applications.</p>
+            <p> <i class="far fa-check-circle"></i>Dive into server-side programming with languages like Node.js and frameworks like Express, enabling you to build robust and scalable backends.</p>
+            <p> <i class="far fa-check-circle"></i> Identify and handle exceptions to write robust and error-tolerant programs.</p>
+            <p> <i class="far fa-check-circle"></i>Learn to implement user registration and authentication systems to secure user data and control access to your applications.</p>
+        </div>
+    
+</div>
+
+<div class="enroll">
+    <h3>This course includes:</h3>
+            <p> <i class="far fa-video"></i> 52 hours video</p>
+            <p> <i class="far fa-newspaper"></i> 75 articles</p>
+            <p> <i class="far fa-cloud-download"></i> Downloadable resources</p>
+            <p> <i class="far fa-infinity"></i>Full lifetime access</p>
+            <p> <i class="far fa-mobile-alt"></i> Access on mobile and TV</p>
+            <p> <i class="far fa-paperclip"></i> Assignments</p>
+            <p> <i class="far fa-trophy-alt"></i> Certificate of completions</p>
+            <div class="enroll-btn">
+                <a class="blue" href="contact.html">Enroll Courses</a>
+            </div>
+</div>
+</section>
+
+
+<!-- footer -->
+<footer>
+<div class="footer-col">
+    <h3>Top Products</h3>
+    <li>Manage Products</li>
+    <li>Power Tools</li>
+    <li>Managed Website</li>
+    <li>Marketing Services</li>
+</div>
+<div class="footer-col">
+    <h3>Quick Links</h3>
+    <li>Jobs</li>
+    <li>Brand Assests</li>
+    <li>Investor Relations</li>
+    <li>Terms of Services</li>
+</div>
+<div class="footer-col">
+    <h3>Manage Reputations</h3>
+    <li>Manage Products</li>
+    <li>Power Tools</li>
+    <li>Managed Website</li>
+    <li>Marketing Services</li>
+</div>
+<div class="footer-col">
+    <h3>Resources</h3>
+    <li>Guides</li>
+    <li>Research</li>
+    <li>Experts</li>
+    <li>Marketing Services</li>
+</div>
+
+</footer>
+<script>
+    $('#menu-btn').click(function(){
+        $('nav .navigation ul').addClass('active')
+    });
+    $('#menu-close').click(function(){
+        $('nav .navigation ul').removeClass('active')
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+   #box{
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60vh;
+   }
+    #info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #101C32;
+        height: 50vh;
+        width: 50%;
+        color: white;
+        
+    }
+    #info .info-box{
+        text-align: center;
+    }
+    #info .info-box i{
+
+        border: 5px solid rgba(245, 245, 247, 0.37);
+        border-radius: 5px;
+        color: white;
+        padding: 10px 13px;
+    }
+    #info .info-box i:hover{
+background:rgb(21, 21, 100);
+color: white;
+border: 1px solid rgb(21, 21, 100);
+cursor: pointer;
+}
+    #form-container{
+        background-color: white;
+        /* padding: 50px; */
+        /* text-align: center; */
+    }
+    input{
+        width: 20vw;
+        margin: 5px 0;
+        padding: 5px;
+        color: white;
+        
+    }
+    #btn{
+        width: 222px;
+        background-color: rgb(21, 21, 100);
+        border: 0px;
+        color: white;
+        width: 20vw;
+    }
+    .error{
+        color: red;
+        margin: 0;
+        text-align: center;
+    }
+    .pro-links{
+margin-top: 10px;
+
+}
+.pro-links i{
+padding: 10px 13px;
+margin: 5px;
+border: 5px solid rgba(245, 245, 247, 0.37);
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3 ease;
+}
+.pro-links i:hover{
+background:rgb(21, 21, 100); ;
+color: white;
+border: 1px solid rgb(21, 21, 100);
+cursor: pointer;
+}
+#form-container{
+    height: 49vh;
+        width: 50%;
+        background-color: white;
+        color:rgb(21, 21, 100);
+        border: 5px solid rgb(21, 21, 100);
+}
+</style>
+<body>
+    <div id="box">
+    <div id="info">
+        <h1>Contact Information</h1>
+        <div class="info-box">
+        <i class="fa fa-envelope"></i>
+        <p>support@TechEduca.in</p>
+        <i class="fa fa-map-marker"></i>
+        <p>Plot. 4A, Street no-15, Uttam Nagar, New Delhi - 110059</p>
+        </div>
+        <div class="pro-links">
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </div>
+    <div id="form-container">
+        <h2>Send us a message</h2>
+         <form action="" onsubmit="return validateForm()">
+            <input type="text" placeholder="User Name" id="username"><br>
+
+            <p id="userError" class="error"></p>
+
+
+
+            <input type="email" placeholder="Enter your email" id="useremail" spellcheck="false" onkeyup="validateEmail()"><br>
+
+            <p id="emailError" class="error"></p>
+
+
+
+
+            <input type="number" placeholder="Mobile Number" id="Number"><br>
+
+            <p id="userNum" class="error"></p>
+
+
+            <input type="text" placeholder="Message" style="height: 8vh"><br>
+
+            <input type="submit" id="btn">
+            <p id="submit_message"></p>
+        </form>
+    </div>
+</div>
+    <script>
+        let username=document.getElementById("username");
+        let UNumber=document.getElementById("Number");
+        let useremail=document.getElementById("useremail");
+        
+        let flag=1;
+        function validateForm(){
+            if(username.value==""){
+                document.getElementById("userError").innerHTML="User Name is empty"
+                flag=0;
+            }
+            else if(username.value.length<3){
+                document.getElementById("userError").innerHTML="User Name require min 3 characters"
+                flag=0;
+            }
+            else{
+                document.getElementById("userError").innerHTML="";
+                flag=1;
+            }
+
+
+            if(useremail.value==""){
+                document.getElementById("emailError").innerHTML="Enter your email";
+                flag=0;
+            }
+            else{
+                document.getElementById("emailError").innerHTML="";
+                flag=1;
+            }
+            
+
+
+            if(UNumber.value.length<10){
+                document.getElementById("userNum").innerHTML="Mobile Number should be of atleast 10 digits"
+                flag=0;
+            }
+            else if(UNumber.value.length>10){
+                document.getElementById("userNum").innerHTML="Mobile Number should be of 10 digits"
+                flag=0;
+            }
+            else if((UNumber.value.charAt(0)!=9)&&(UNumber.value.charAt(0)!=8) && (UNumber.value.charAt(0)!=7) ){
+                document.getElementById("userNum").innerHTML="Number should start with 9,8 and 7";
+                flag=0;
+            }
+            else{
+                document.getElementById("userNum").innerHTML="";
+                flag=1;
+            }
+
+
+           
+            if(flag){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        function validateEmail(){
+           if(!useremail.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+                document.getElementById("emailError").innerHTML="please enter a valid email";
+                return false;
+            }
+            else{
+            document.getElementById("emailError").innerHTML="";
+            return true;
+            }
+        }
+    </script>
+</body>
+</html>
+
+    <!-- <style>
+      #box{
+    /* box-sizing: border-box; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60vh;
+    margin:0 100px;
+   }
+    #info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #101C32;
+        height: 50vh;
+        width: 50%;
+        color: white;
+        
+    }
+    #info h1{
+      color: white;
+      font-size: 25px;
+    }
+    #info .info-box{
+        text-align: center;
+    }
+    #info .info-box i{
+
+        border: 5px solid rgba(245, 245, 247, 0.37);
+        border-radius: 5px;
+        color: white;
+        padding: 10px 13px;
+    }
+    #info .info-box i:hover{
+background:rgb(21, 21, 100);
+color: white;
+border: 1px solid rgb(21, 21, 100);
+cursor: pointer;
+}
+#info .pro-links{
+margin-top: 10px;
+
+}
+#info .pro-links i{
+padding: 10px 13px;
+margin: 5px;
+border: 5px solid rgba(245, 245, 247, 0.37);
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3 ease;
+}
+#info .pro-links i:hover{
+background:rgb(21, 21, 100); ;
+color: white;
+border: 1px solid rgb(21, 21, 100);
+cursor: pointer;
+}
+    #form-container{
+        background-color: white;
+        /* padding: 50px; */
+        /* text-align: center; */
+    }
+    input{
+        width: 20vw;
+        margin: 5px 0;
+        padding: 5px;
+        color: white;
+        
+    }
+    #btn{
+        width: 222px;
+        background-color: rgb(21, 21, 100);
+        border: 0px;
+        color: white;
+        width: 20vw;
+    }
+    .error{
+        color: red;
+        margin: 0;
+        text-align: center;
+    }
+#form-container{
+    height: 50vh;
+        width: 50%;
+        background-color: white;
+        color:rgb(21, 21, 100);
+        border: 5px solid rgb(21, 21, 100);
+}
+    </style> -->

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav>
+      <img src="images/logo.svg" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+
+          <li><a href="course.html">Courses</a></li>
+          <li><a class="active"  href="contact.html">Contact Us</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- form validation -->
+    <section id="registration_form">
+      <div id="box">
+        <div id="info">
+            <h2>Contact Information</h>
+            <div class="info-box">
+            <i class="fa fa-envelope"></i>
+            <p>support@TechEduca.in</p>
+            <i class="fa fa-map-marker"></i>
+            <p>Plot. 4A, Street no-15, Uttam Nagar, New Delhi - 110059</p>
+            </div>
+            <div class="pro-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+        <div id="form-container">
+            <h2>Send us a message</h2>
+             <form action="" onsubmit="return validateForm()">
+                <input type="text" placeholder="User Name" id="username">
+    
+                <p id="userError" class="error"></p>
+    
+    
+    
+                <input type="email" placeholder="Enter your email" id="useremail" spellcheck="false" onkeyup="validateEmail()">
+    
+                <p id="emailError" class="error"></p>
+    
+    
+    
+    
+                <input type="number" placeholder="Mobile Number" id="Number">
+    
+                <p id="userNum" class="error"></p>
+    
+    
+                <input type="text" placeholder="Message" style="height: 7vh">
+    
+                <input type="submit" id="btn1">
+               
+            </form>
+           
+        </div>
+    </div>
+    </section>
+      
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-col">
+          <h3>Top Products</h3>
+          <li>Manage Products</li>
+          <li>Power Tools</li>
+          <li>Managed Website</li>
+          <li>Marketing Services</li>
+      </div>
+      <div class="footer-col">
+          <h3>Quick Links</h3>
+          <li>Jobs</li>
+          <li>Brand Assests</li>
+          <li>Investor Relations</li>
+          <li>Terms of Services</li>
+      </div>
+      <div class="footer-col">
+          <h3>Contact Us</h3>
+          <li>Courses</li>
+          <li>About Us</li>
+          <li>Privact Policy</li>
+          <li>Terms of use</li>
+      </div>
+      <div class="footer-col">
+          <h3>Resources</h3>
+          <li>Guides</li>
+          <li>Research</li>
+          <li>Experts</li>
+          <li>Refund</li>
+      </div>
+      
+      </footer>
+
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+
+    
+        let username=document.getElementById("username");
+        let UNumber=document.getElementById("Number");
+        let useremail=document.getElementById("useremail");
+        
+        let flag=1;
+        function validateForm(){
+            if(username.value==""){
+                document.getElementById("userError").innerHTML="*User Name is empty"
+                flag=0;
+            }
+            else if(username.value.length<3){
+                document.getElementById("userError").innerHTML="*User Name require min 3 characters"
+                flag=0;
+            }
+            else{
+                document.getElementById("userError").innerHTML="";
+                flag=1;
+            }
+
+
+            if(useremail.value==""){
+                document.getElementById("emailError").innerHTML="*Enter your email";
+                flag=0;
+            }
+            else{
+                document.getElementById("emailError").innerHTML="";
+                flag=1;
+            }
+            
+
+
+            if(UNumber.value.length<10){
+                document.getElementById("userNum").innerHTML="*Mobile Number should be of atleast 10 digits"
+                flag=0;
+            }
+            else if(UNumber.value.length>10){
+                document.getElementById("userNum").innerHTML="*Mobile Number should be of 10 digits"
+                flag=0;
+            }
+            else if((UNumber.value.charAt(0)!=9)&&(UNumber.value.charAt(0)!=8) && (UNumber.value.charAt(0)!=7) ){
+                document.getElementById("userNum").innerHTML="*Number should start with 9,8 and 7";
+                flag=0;
+            }
+            else{
+                document.getElementById("userNum").innerHTML="";
+                flag=1;
+            }
+
+
+           
+            if(flag){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        function validateEmail(){
+           if(!useremail.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+                document.getElementById("emailError").innerHTML="please enter a valid email";
+                return false;
+            }
+            else{
+            document.getElementById("emailError").innerHTML="";
+            return true;
+            }
+        }
+ 
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <nav>
+        <img src="images/logo.svg" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About Us</a></li>
+                
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="about-home">
+        <h2>A platform for the next generation of learners!</h2>
+    </section>
+
+    <section id="about-container">
+        <div class="about-img">
+            <img src="images/a.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Hello! Welcome to TechEduca! Really happy to see you here.</h2>
+            <p>Thinking of taking a step towards a mentorship programme? It definitely seems a bit daunting at first. It is never easy to ask for someone's counsel or guidance be it for studies or just in general. So, at TechEduca we are here to provide all the necessary counsel you might need for placement preparations, interview experiences, programming, et cetera! For any additional questions, feel free to email us at support@TechEduca.in</p>
+            <div class="about-fe">
+                <img src="images/fe1.png" alt="">
+                <div class="fe-text">
+                    <h5>400+ Courses</h5>
+                   <p>We are thrilled to offer you a diverse selection of over 400 courses designed to ignite your passion for learning and empower your personal and professional growth. </p>
+                </div>
+            </div>
+            <div class="about-fe">
+                <img src="images/fe2.png" alt="">
+                <div class="fe-text">
+                    <h5>Recorded Videos</h5>
+                    <p>With over 400 recorded videos available, you have the power to learn at your own pace, anytime and anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features -->
+    <section id="features">
+        <h1>Awesome Featurse</h1>
+        
+        <div class="fea-base">
+            <div class="fea-box">
+                <img src="images/466459.png" alt="">
+                <h3>Scholarship Facility</h3>
+                <p>
+                  
+                </p>
+            </div>
+            <div class="fea-box">
+                <img src="images/onlineCourses.png" alt="">
+                <h3> 400+ free Online Courses available</h3>
+               
+            </div>
+            <div class="fea-box">
+                <img src="images/certificate.png" alt="">
+                <h3>Global certification</h3>
+                
+            </div>
+        </div>
+    </section>
+<section id="trust">
+    <h1>Trusted By</h1>
+    <p>At TechEduca, we take pride in being a trusted source of knowledge and learning for a diverse community of learners around the globe. Our commitment to excellence and quality education has earned us the trust of:
+
+    </p>
+    <div class="trust-img">
+        <img src="images/trust (1).png" alt="">
+        <img src="images/trust (2).png" alt="">
+        <img src="images/trust (3).png" alt="">
+        <img src="images/trust (4).png" alt="">
+        <img src="images/trust (5).png" alt="">
+        <img src="images/trust (6).png" alt="">
+    </div>
+</section>
+
+<!-- footer -->
+<footer>
+    <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Products</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Services</li>
+    </div>
+    <div class="footer-col">
+        <h3>Quick Links</h3>
+        <li>Jobs</li>
+        <li>Brand Assests</li>
+        <li>Investor Relations</li>
+        <li>Terms of Services</li>
+    </div>
+    <div class="footer-col">
+        <h3>Contact Us</h3>
+        <li>Courses</li>
+        <li>About Us</li>
+        <li>Privact Policy</li>
+        <li>Terms of use</li>
+    </div>
+    <div class="footer-col">
+        <h3>Resources</h3>
+        <li>Guides</li>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Refund</li>
+    </div>
+    
+    </footer>
+<script>
+    $('#menu-btn').click(function(){
+        $('nav .navigation ul').addClass('active')
+    });
+    $('#menu-close').click(function(){
+        $('nav .navigation ul').removeClass('active')
+    });
+</script>
+</body>
+</html>
